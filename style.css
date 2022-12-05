@@ -1,0 +1,570 @@
+/* ----- Boilerplate CSS ----- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ----- Sets font color, type & body size ----- */
+body {
+  color: white;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  min-height: 100vh;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  border: none;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+#wrapper {
+  min-width: 380px;
+}
+
+/* Navigation Bar */
+/* ----- Make sure menu doesn't display by default. ----- */
+.container {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 350px;
+  padding: 1rem;
+}
+
+.navlinks li {
+  padding: .25rem;
+  margin: auto;
+}
+
+.navlinks a:hover {
+  color: #c8a47e;
+  transition: .3s;
+}
+
+.logoheader {
+  margin: .5rem;
+}
+
+.logoheader a {
+  display: block;
+}
+
+#logoheader {
+  display: block;
+  width: 130px;
+  padding: .25rem;
+}
+
+#logoheader:hover {
+  border: 2px solid #c8a47e;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  padding: 1rem;
+}
+
+.buttons a {
+  padding: .5rem;
+}
+
+a.first_btn {
+  width: 145px;
+  background-color: #c8a47e;
+  cursor: pointer;
+  border: none;
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.first_btn:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid #c8a47e;
+  transition: .3s;
+}
+
+
+/*----- Makes icons different color on hover. -----*/
+.buttons .fa-instagram:hover {
+  color: #c13584;
+  transition: .3s;
+}
+
+.buttons .fa-facebook:hover {
+  color: #4267b2;
+  transition: .3s;
+}
+
+.buttons .fa-twitter:hover {
+  color: #1da1f2;
+  transition: .3s;
+}
+
+
+/* ----- Hero Image: Main page below Navigation. ----- */
+.hero_image {
+  background-image: url("images/landingimg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, .3);
+  background-blend-mode: darken;
+  text-align: center;
+}
+
+.hero_image h1 {
+  text-align: center;
+  padding-top: 15.625rem;
+  padding-bottom: 2rem;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.main_btn {
+  background-color: #c8a47e;
+  cursor: pointer;
+  border: 2px solid black;
+  width: 200px;
+  text-align: center;
+}
+
+a.main_btn {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 1.25rem 1.75rem;
+  font-weight: 900;
+}
+
+.main_btn:hover {
+  color: #c8a47e;
+  background-color: black;
+  border: 2px solid white;
+  transition: .3s;
+}
+
+
+/* ----- Services: What We Offer ----- */
+.service {
+  background-color: #c8a47e;
+  width: 100%;
+  color: black;
+  padding: 1rem;
+  padding-bottom: 11.375rem;
+}
+
+.service table {
+  margin: auto;
+  border: 5px solid black;
+  padding: .5rem;
+  padding-bottom: 2rem;
+}
+
+.service table tr {
+  padding: .75rem;
+}
+
+.service table tr td {
+  font-size: 1rem;
+  padding: .75rem;
+}
+
+.service h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 1rem;
+  padding-top: 9.375rem;
+}
+
+
+/* ----- About: Who We Are ----- */
+.about {
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+}
+
+.about h2 {
+  text-align: center;
+  padding: .5rem;
+  padding-top: 9.375rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.about p {
+  text-align: center;
+  margin-right: 8rem;
+  margin-left: 8rem;
+  padding: .75rem;
+  padding-bottom: 11.375rem;
+  font-size: 1rem;
+}
+
+.barbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+}
+
+.barbers img {
+  border: 2px solid white;
+  border-radius: 5%;
+}
+
+.frank, .glenn, .jeremy {
+  text-align: center;
+  padding: .5rem;
+}
+
+
+/* ----- FULL PAGE LOGO ----- */
+.full_logo {
+  background-color: #c8a47e;
+  padding-top: 9.375rem;
+  padding-bottom: 9.375rem;
+  width: 100%;
+}
+
+.full_logo a {
+  display: block;
+}
+
+.full_logo a img  {
+  margin: auto;
+}
+
+#logo_footer {
+  border: 2px solid white;
+  display: block;
+  max-width: 500px;
+}
+
+#logo_footer:hover {
+  border: 2px solid #c8a473;
+}
+
+/* ----- Footer ----- */
+.footer {
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+  padding-top: 9.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastbutton {
+  margin: 1rem;
+  width: 140px;
+  background-color: #c8a47e;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+}
+
+a.lastbutton {
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.lastbutton:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid #c8a47e;
+  transition: .3s;
+}
+
+.copyright {
+  background-color: black;
+  width: 100%;
+  padding: .5rem;
+}
+
+.copyright p {
+  padding: .5rem;
+  padding-top: 4rem;
+  padding-bottom: 7.375rem;
+  text-align: center;
+}
+
+.copyright p, hr {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.navlinks_foot {
+  list-style: none;
+  padding: 1rem;
+  margin: 0rem .5rem;
+}
+
+.navlinks_foot li {
+  padding: .5rem;
+  margin: .25rem;
+}
+
+.navlinks_foot li a {
+  color: #c8a47e;
+  padding: .5rem;
+  margin: .25rem;
+}
+
+.navlinks_foot li a:hover {
+  color: white;
+  transition: .3s;
+}
+
+.buttons_foot a {
+  text-decoration: none;
+  color: white;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.buttons_foot {
+  padding: .5rem;
+  margin: .5rem;
+}
+
+.buttons_foot .fa-instagram {
+  font-size: 2rem;
+}
+
+.buttons_foot .fa-instagram:hover {
+  color: #c13584;
+  transition: .3s;
+}
+
+.buttons_foot .fa-facebook:hover {
+  color: #4267b2;
+  transition: .3s;
+}
+
+.buttons_foot .fa-facebook {
+  font-size: 2rem;
+}
+
+.buttons_foot .fa-twitter {
+  font-size: 2rem;
+}
+
+.buttons_foot .fa-twitter:hover {
+  color: #1da1f2;
+  transition: .3s;
+}
+
+.hours_location table {
+  padding: 1rem;
+  margin: .5rem;
+}
+
+.hours_location td {
+  padding: .5rem;
+}
+
+.hours_location a {
+  display: block;
+}
+
+.hours_location a:hover {
+  color: white;
+  transition: .3s;
+}
+
+#tele {
+  color: #c8a47e;
+}
+
+#tele:hover {
+  color: white;
+}
+
+/* ----- Media Queries and Responsiveness ----- */
+@media (max-width: 850px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  
+  .container {
+    display: block;
+    cursor: pointer;
+    padding: 0rem 2rem;
+  }
+
+  .container.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .container.active .bar:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  .container.active .bar:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  
+  .navlinks {
+    position: fixed;
+    left: -100%;
+    top: 150px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: .5s;
+  }
+
+  .navlinks li {
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+
+  .navlinks a {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .25em;
+  }
+  
+  .navlinks a:hover {
+    color: #c8a47e;
+    transition: .7s;
+  }
+  
+  .navlinks.active {
+    left: 0;
+  }
+  
+  .bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 8px auto;
+    -webkit-transition: all .5s ease in out;
+    transition: all .5s ease in out;
+    background-color: white;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .logoheader {
+    padding: 0rem 2rem;
+  } 
+
+  .barbers {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .about p {
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+  }
+
+  #logo_footer {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .copyright {
+    padding: .5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .copyright p {
+    padding: 1rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .buttons_foot .fa-facebook {
+    font-size: 1.25rem;
+  }
+
+  .buttons_foot .fa-twitter {
+    font-size: 1.25rem;
+  }
+
+  .buttons_foot .fa-instagram {
+    font-size: 1.25rem;
+  }
+
+  .navlinks_foot {
+    display: flex;
+  }
+
+  .navlinks_foot {
+    padding-top: 1rem;
+  }
+
+  .full_logo {
+    padding: 2rem;
+  }
+
+  .buttons_foot {
+    padding: 0;
+    margin: 0;
+  }
+
+  .lastbutton {
+    padding: 0;
+    margin: 0;
+  }
+  
+
+}
